@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>kontakt</title>
+<link rel="stylesheet" type="text/css" href="style_kontakt.css">
+</head>
+
+<body>
+<div class="global_wrapper">
+<header>
+               <div class="dropdown">
+           		 <button onclick="myFunction()" class="dropbtn">Kontakt</button>
+             	 <div id="myDropdown" class="dropdown-content">
+                 <a href="../index_HTML_shusi2500.html">Forside</a>
+                <a href="../åbningstider/åbningstider_html.html">Åbningstider</a>
+                <a href="../om os/Om os sushi2500.html">Om os</a>
+        		
+     		 </div>
+    		</div>
+        </header>
+
+
+<footer>
+    <div id="contakt">
+   		<div class="inner_wrapper">
+   			
+   				
+                <form action="mailto:mail@mail.com" method="post" enctype="multipart/form-data">
+                	
+                	<input type="text" name="fullname" id="fullname" placeholder="Navn">
+                	
+                	
+                	<input type="email" name="yourEmail" id="yourEmail" placeholder="Email">
+                    
+                    
+                    <textarea name="message" id="message" maxlength="300" placeholder="Besked"></textarea>
+                    
+                    <button type="submit">send besked</button>
+                </form>
+  
+   
+  		 </div>
+   </div>
+   </footer>
+   
+   
+   
+   
+   <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+   
+   
+   
+   
+
+</div>
+</body>
+</html>
